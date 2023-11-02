@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    --color1: rgb(123, 9, 123);
+    --color1: wheat;
     height: 15vh;
     color: var(--color1);
     border-bottom: 2px solid var(--color1);
@@ -20,10 +20,25 @@ header {
 }
 
 main {
+    padding: 10px;
+    display: flex;
     height: 75vh;
+    max-width: 850px;
     background-color: hsla(0, 20%, 80%, .1);
+    margin: auto;
 }
 
 footer {
     text-align: center;
+}
+
+.item {
+    --size: 150px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 30%);
+    text-align: center;
+    color: wheat;
+    box-shadow: 2px 2px black;
 }
