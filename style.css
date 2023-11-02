@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 30%);
+    padding: 0px 20px;
+}
+
+header {
+    --color1: rgb(123, 9, 123);
+    height: 15vh;
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 75vh;
+    background-color: hsla(0, 20%, 80%, .1);
+}
+
+footer {
+    text-align: center;
+}
