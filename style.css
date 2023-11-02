@@ -19,13 +19,14 @@ header {
     justify-content: center;
 }
 
-main {
+#itemHolder {
     padding: 10px;
     display: flex;
     height: 75vh;
     max-width: 850px;
     background-color: hsla(0, 20%, 80%, .1);
     margin: auto;
+    justify-content: space-evenly;
 }
 
 footer {
