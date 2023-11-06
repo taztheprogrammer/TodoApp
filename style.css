@@ -19,6 +19,18 @@ header {
     justify-content: center;
 }
 
+#add {
+    position: absolute;
+    right: 20px;
+    font-size: 32px;
+    padding: 10px;
+}
+
+#add:hover {
+    color: black;
+    cursor: pointer;
+    background-color: wheat;
+}
 #itemHolder {
     padding: 10px;
     display: flex;
