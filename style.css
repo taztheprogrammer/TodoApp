@@ -22,11 +22,15 @@ header {
 #itemHolder {
     padding: 10px;
     display: flex;
-    height: 75vh;
-    max-width: 850px;
+    height: 700px;
+    width: 600px;
     background-color: hsla(0, 20%, 80%, .1);
     margin: auto;
-    justify-content: space-evenly;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    overflow-y: auto;
 }
 
 footer {
@@ -35,8 +39,8 @@ footer {
 
 .item {
     --size: 150px;
-    height: var(--size);
-    width: var(--size);
+    min-height: var(--size);
+    width: 500px;
     border-radius: 10px;
     background-color: hsl(0, 0%, 30%);
     text-align: center;
