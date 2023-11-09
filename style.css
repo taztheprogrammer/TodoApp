@@ -58,4 +58,16 @@ footer {
     text-align: center;
     color: wheat;
     box-shadow: 2px 2px black;
+    padding: 15px 20px;
 }
+
+.item .task {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.item .description {
+    color: hsl(0, 9%, 76%);
+}
+
