@@ -19,18 +19,39 @@
 //     items[i].innerHTML = classes[i].name;
 // }
 
+function item(task, description) {
+    this.task = task;
+    this.description = description;
+}
 
+//remember to check what I should actually this [var, const]
+const item1 = new item("cse 214", "study for class today");
+const item2 = new item("cse 215", "begin hw, study yesterday");
+const item3 = new item("che hw", "dynamic module");
+const item4 = new item("ams hw", "homework");
 
 
 const itemholder = document.getElementById('itemHolder');
-const items = ['i1', 'i2', 'i3'];
+const items = [item1, item2, item3, item4];
+// console.log(items[1].task);
 
 
 function render() {
     for(let num = 0; num < items.length; num++) {
+        const task = document.createElement('span');
+        task.innerHTML = items[num].task;
+        task.classList.add('task');
+
+        const description = document.createElement('span')
+        description.innerHTML = items[num].description;
+        description.classList.add('description')
+
         const item = document.createElement('div');
         item.classList.add('item');
-        item.innerHTML = items[num];
+
+        item.appendChild(task);
+        item.appendChild(description);
+
         itemholder.appendChild(item);
     }
 }
